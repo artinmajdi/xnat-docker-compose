@@ -85,6 +85,8 @@ services:
     hostname: jupyterhub
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:rw"
+#    security_opt:
+#      - seccomp:unconfined
     networks:
       - xnat-services
     environment:
@@ -97,3 +99,4 @@ services:
       JH_XNAT_SERVICE_TOKEN: "${JH_XNAT_SERVICE_TOKEN}"
       JH_XNAT_USERNAME: "${JH_XNAT_USERNAME}"
       JH_XNAT_PASSWORD: "${JH_XNAT_PASSWORD}"
+
