@@ -21,3 +21,5 @@ xnat/webapps
 !linux.env
 !mac.env
 
+.vscode/
+.idea/
